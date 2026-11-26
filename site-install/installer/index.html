@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Check, back up and install JAZZY on the M-VAVE FM-1.">
+<title>JAZZY / Installer</title>
+<link rel="icon" href="../jazzy-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../firmware-links.css">
+<link rel="stylesheet" href="installer.css?v=20261126.1">
+<script type="module">if(new URLSearchParams(location.search).get("board")==="smk37")import("./smk-ui.mjs?v=20261126.1").catch(e=>document.querySelector("#intro").textContent="Installer could not load. Reload this page or check your connection. "+e.message);else import("./installer.mjs?v=20261126.1").catch(e=>document.querySelector("#intro").textContent="Installer could not load. Reload this page or check your connection. "+e.message);</script>
+<link rel="stylesheet" href="../platform-navigation.css?v=navigation-20261116.2"><script src="../platform-navigation.js?v=navigation-20261116.2" defer></script></head>
+<body>
+<header class="jr-site-header top install-header"><a target="_top" class="jr-brand" href="https://jazzyrhythmer.github.io/jazzy/"><img src="https://jazzyrhythmer.github.io/jazzy/jazzy-mark.svg" width="27" height="27" alt=""><span>JAZZY</span><small>for FM-1</small></a><nav class="jr-section-nav" aria-label="Site sections"><a target="_top" data-section="overview" href="https://jazzyrhythmer.github.io/jazzy/">OVERVIEW</a><a target="_top" data-section="engines" href="https://jazzyrhythmer.github.io/jazzy/#engines">ENGINES</a><a target="_top" data-section="features" href="https://jazzyrhythmer.github.io/jazzy/#patterns">FEATURES</a><a target="_top" data-section="start" href="https://jazzyrhythmer.github.io/jazzy/installer/">GET STARTED</a><a target="_top" data-section="manual" href="https://jazzyrhythmer.github.io/jazzy/manual/">MANUAL</a><a target="_top" data-section="studio" href="https://jazzyrhythmer.github.io/jazzy/#support">STUDIO</a></nav><div class="jr-platform-switcher" role="navigation" aria-label="Platforms and instruments"><div class="jr-platform-group" role="group" aria-label="Firmware for FM-1"><span class="jr-platform-label">FOR FM-1</span><div class="jr-platform-links"><a target="_top" href="https://jazzyrhythmer.github.io/jazzy/" aria-label="JAZZY for FM-1" aria-current="page">JAZZY</a><a target="_top" href="https://jazzyrhythmer.github.io/rhythmer/#home" aria-label="RHYTHMER for FM-1">RHYTHMER</a></div></div><div class="jr-platform-group" role="group" aria-label="Firmware for MPC Sample"><span class="jr-platform-label">FOR MPC SAMPLE</span><div class="jr-platform-links"><a target="_top" href="https://jazzyrhythmer.github.io/mpc-sample/#home" aria-label="RHYTHMER OS for MPC Sample">RHYTHMER</a></div></div><div class="jr-platform-group" role="group" aria-label="Instruments for Mac and Windows"><span class="jr-platform-label">FOR MAC &amp; WINDOWS</span><div class="jr-platform-links"><a target="_top" target="_top" href="https://jazzyrhythmer.github.io/rhythmer-engines/" aria-label="Rhythmer Engines for Mac &amp; Windows">RHYTHMER</a></div></div></div></header>
+<nav class="install-options" aria-label="Installation options"><a href="./">JAZZY INSTALL</a><a href="?mode=stock">OFFICIAL RECOVERY</a></nav>
+<main id="main"><nav class="notice" aria-label="Keyboard model"><a href="?board=fm1">FM-1 INSTALL</a> · <a href="?board=smk37">SMK-37 PRO INSTALL</a></nav>
+  <div class="eyebrow">M–VAVE FM–1 / PUBLIC BETA 0.1.0-BETA.1 / BUILD 20261112.1</div>
+  <h1 id="title">INSTALL JAZZY.</h1>
+  <p class="intro" id="intro">Explore the unheard. Connect your FM-1, save your music and review the target before installing.</p>
+  <p class="notice">Already using JAZZY? <a href="../editor/?target=usb#projects">Open the USB editor to back up your music →</a> · <a href="../editor/?target=browser">Explore the browser workspace ↗</a></p>
+
+  <div class="install-start">
+    <div>
+      <span class="eyebrow" id="start-label">COMPLETE INSTALLATION</span>
+      <h2 id="start-title">One install. Two Break loops ready.</h2>
+      <p id="start-description">JAZZY includes Break A / Amen and Break B / Think by default. Both are two bars at 160 BPM, mono 16 kHz / 12-bit. The official V15 recovery file is included and verified automatically.</p>
+      <button type="button" id="start" disabled>INSTALL JAZZY →</button>
+      <p class="small">Desktop Chrome or Edge · USB data cable · one initial checklist; automatic backup and installation.</p>
+      <div class="actions">
+        <a id="bundle-download" class="text-link" href="../downloads/JAZZY-0.1.0-beta.1-20261112.1.fwsc?sha=bd80190ca19d" download>JAZZY FIRMWARE ↓</a>
+        <a class="text-link" href="../downloads/official-v15/FM-1_015.fwsc" download>OFFICIAL V15 ↓</a>
+        <a class="text-link" href="../downloads/SINGLE-BREAK-SHA256SUMS.txt" download>CHECKSUMS ↓</a>
+      </div>
+    </div>
+    <div class="sample-brief" id="sample-brief">
+      <span class="eyebrow">INCLUDED BREAK AUDIO</span>
+      <p><strong>A / Amen</strong> — The Winstons, “Amen, Brother”.<br><strong>B / Think</strong> — Lyn Collins, “Think (About It)”.</p>
+      <p>Recording rights are separate from the firmware license. Rights-holder authorization for redistribution of these copies has not been obtained.</p>
+      <a href="../downloads/THIRD-PARTY-AUDIO.txt">BREAK AUDIO SOURCES &amp; RIGHTS →</a>
+    </div>
+  </div>
+  <div class="notice" id="v15-recommendation">
+    <strong>Supported starting points: official V15 and V16.</strong>
+    <p>Back up your music and start from official V15 or V16. Keep the matching original recovery file. Use the source firmware’s documented official-recovery route if you are coming from another custom firmware. Save a backup with that firmware’s own editor first. A supported JAZZY or RHYTHMER build can export a musical backup here. V15 recovery can make custom music unreadable.</p>
+  </div>
+  <section class="notice" id="install-compatibility"><h2>V15 / V16 · newer FM-1 flash support</h2><p>Install directly from official V15, official V16, RHYTHMER or JAZZY after backup and review. V15 is included; for a unit running V16, select M-VAVE’s unmodified V16 <code>FM-1.fwsc</code> before continuing. Keep the matching original firmware for recovery. Other custom firmwares must use their own documented return-to-official route first.</p><label for="stock-version">OFFICIAL RECOVERY TARGET</label><select id="stock-version" style="max-width:100%;padding:.7rem;background:#111;color:#eee;border:1px solid #555"><option value="FM-1_015">V15 — included and verified</option><option value="FM-1_016">V16 — select the official file below</option></select><p id="recovery-selection" role="status">V15 selected. Changing this selection never writes to the FM-1.</p><p><a href="https://www.cuvave.com/download" target="_blank" rel="noopener noreferrer">M-VAVE official V16 download →</a> · <a href="#stock-file">Select the original firmware file ↓</a></p><p>The firmware accepts the original Puya <code>0x856014</code> and newer UC25HQ80 <code>0xB36014</code>. This page cannot read the chip ID through the current MIDI protocol; it does not identify hardware from its colour, logo or firmware name. Older installed firmware may still refuse update entry.</p><p>Recovery keeps the device’s boot-area match check. A V15/V16 mismatch is stopped rather than forced. Full hardware compatibility is not established by a successful browser check.</p><p>If installation stops, download the diagnostic report: it records the source, selected recovery, target SHA, browser, transfer phase and request counters. A failed final identity check may happen after the firmware has been written. If no MIDI loader is visible, this page cannot perform ROM/Transporter recovery.</p><p class="small">Installer update: 20261116.1 · V15/V16 package verification and source routing based on JIANT’s current public installer (V10.7.17); refusal diagnostics cross-checked against Skiff 2.5.1. No firmware, audio or polyphony changes. Bounded MIDI and download waits, JAZZY port recognition and reconnect handling are included.</p></section><section id="transfer-status" class="transfer-status" aria-label="Installation progress"></section>
+  <div class="notice" id="risk-notice">
+    <strong>Independent public beta.</strong>
+    <p>Firmware updates can erase music, presets or samples, leave the FM-1 in update mode or require hardware recovery. Testing of this build on physical devices is limited. Back up first and keep power and USB connected until the installer verifies the restart.</p>
+    <p>JAZZY is an independent community project with no affiliation, sponsorship or endorsement by M-VAVE. To the extent permitted by law, JAZZY is provided without warranty and its authors and contributors disclaim liability for device damage, malfunction and data loss. Statutory rights and liability that cannot be excluded still apply.</p>
+  </div>
+  <div class="layout">
+    <aside aria-label="Installation steps">
+      <ol><li>Automatic package checks</li><li>Automatic device check</li><li>Automatic backup</li><li>Automatic transfer &amp; verification</li></ol>
+      <a href="../manual/">JAZZY MANUAL ↗</a>
+      <a href="?mode=stock">OFFICIAL V15 / V16 RECOVERY →</a>
+      <a href="./">JAZZY INSTALL →</a>
+    </aside>
+    <div>
+      <section>
+        <span class="eyebrow">01 / AUTOMATIC CHECKS</span>
+        <h2>Recovery is already here.</h2>
+        <p>The installer checks package size, SHA-256 and firmware identity. For JAZZY it also verifies both embedded Break banks. The recovery file is the unmodified official V15 image from M-VAVE’s FM1 Open repository.</p>
+        <p id="stock-status" role="status">Checking official V15…</p>
+        <p><a href="../#update">What’s new in this build</a> · <a href="../manual/#duck">Set up sidechain and Kick Link</a></p>
+    <p id="build-status" role="status">Checking the JAZZY firmware…</p>
+        <details open>
+          <summary>Package sources and official V15 / V16 file selection</summary>
+          <p><a href="../downloads/official-v15/UPSTREAM.json">Pinned official source and hash</a> · <a href="../downloads/official-v15/APACHE-2.0.txt">Apache-2.0</a> · <a href="../downloads/official-v15/NOTICE.txt">Recovery attribution</a></p>
+          <p>V15 is included. For V16, select M-VAVE’s unmodified FM-1.fwsc; exact size, SHA-256 and package checks are required. Modified files are rejected.</p>
+          <label for="stock-file">OFFICIAL V15 / V16 FILE</label>
+          <input id="stock-file" type="file" accept=".fwsc">
+        </details>
+      </section>
+      <section>
+        <span class="eyebrow">02 / CONNECT</span>
+        <h2>One FM-1. A data cable.</h2>
+        <p>Use desktop Chrome or Edge over HTTPS or localhost. Connect one FM-1 with a USB data cable, set it to USB Device mode, stop playback and close DAWs, other installers and USB MIDI editors. Install handles connection and inspection automatically. Use Connect &amp; Inspect to check the device identity separately.</p>
+        <div class="actions"><button type="button" id="connect" disabled>CONNECT &amp; INSPECT</button><button type="button" id="disconnect" disabled>DISCONNECT</button></div>
+        <p id="device-status" role="status">Not connected.</p>
+      </section>
+      <section>
+        <span class="eyebrow">03 / BACKUP</span>
+        <h2>Keep the music first.</h2>
+        <p>The installer reads projects, sounds and settings from compatible custom firmware and checks each archive object. <strong>Musical backups do not contain Break audio.</strong> Keep your original audio files separately and restore the archive with its source firmware’s editor. RHYTHMER drum-kit tracks may need a new sound assignment in JAZZY.</p>
+        <button type="button" id="backup" disabled>READ MUSICAL BACKUP</button>
+        <a id="backup-download" class="button" hidden download>DOWNLOAD BACKUP ↓</a>
+        <p id="backup-status" role="status">Inspect the device first.</p>
+        <label class="check"><input id="backup-saved" type="checkbox" disabled><span id="backup-label">I downloaded and saved the musical backup outside this browser, and kept my original Break audio separately.</span></label>
+      </section>
+      <section>
+        <span class="eyebrow">04 / REVIEW</span>
+        <h2 id="review-heading">Review the JAZZY installation.</h2>
+        <p id="review-copy">One firmware transfer installs JAZZY and replaces Break slots A and B with the included Amen and Think loops. Save any custom loops separately before continuing.</p>
+        <label class="check"><input id="review-risk" type="checkbox"><span>I understand the risks of a public beta firmware update. The selected official recovery file must be verified, and I will keep power and USB connected.</span></label>
+        <button type="button" id="review" disabled>REVIEW INSTALLATION →</button>
+        <p id="result" role="status" aria-live="polite">Nothing has been written.</p>
+        <pre id="log" aria-label="Installation log"></pre>
+        <a id="report" class="button" download="JAZZY-install-report.json">DOWNLOAD DIAGNOSTIC REPORT ↓</a>
+      </section>
+      <section>
+        <h2>If an update is interrupted.</h2>
+        <p>Reconnect with stable power and inspect the FM-1 again. Use the same installer, browser and target package to resume a matching saved update. A dark FM-1 that does not appear over USB may need hardware recovery.</p>
+        <p>Official recovery verifies the selected V15 (<code>FM-1_015</code>) or V16 (<code>FM-1_016</code>) identity after restart. It does not import custom projects into stock firmware.</p>
+        <p class="small"><a href="UPSTREAM.json">Installer sources</a> · <a href="LICENSE">GPL-3.0 license</a> · <a href="../downloads/THIRD-PARTY-AUDIO.txt">Break audio notice</a> · <a href="../manual/#lxr-credits">Elixir / LXR-02 credits</a> · <a href="../downloads/JAZZY-0.1.0-beta.1-20261112.1-source.tar.gz?sha=bd80190ca19d">Corresponding source ↓</a></p>
+      </section>
+    </div>
+  </div>
+<p class="notice"><strong>RHYTHMER ↔ JAZZY / DIRECT UPDATE</strong> Both companion firmwares can update directly after the initial checklist and automatic backup. No V15 detour is required. Firmware installation replaces Break A/B with the bundled loops; keep your own audio and .slot banks. Musical compatibility may differ between the two OSes.</p><p class="notice"><strong>RESTORED SINGLE-BREAK BASE / 20261112.1</strong> — One Break track. HYDRA legato, LXR track ENV and zero default sends are included. <a href="../downloads/SINGLE-BREAK-20261112.1.md">Read release and rollback notes →</a></p><section class="notice" id="install-wait-help"><h2>Waiting for the FM-1?</h2><p>Keep this tab visible, the computer awake and USB/power connected. Loader and firmware reconnection can pause the percentage while USB MIDI ports change. The elapsed time, last-request counter and transfer log show the current stage.</p><p>If an error appears, download the report and inspect the FM-1 before retrying. A failed final check can happen after the firmware has already been installed. Resume only the same reviewed package with a matching loader/checkpoint. <a href="../manual/#install">Stage-by-stage troubleshooting →</a></p><p class="small">Installer maintenance 20261116.1 · firmware build remains 20261112.1.</p></section></main>
+<dialog id="confirm" aria-labelledby="confirm-title">
+  <form method="dialog">
+    <span class="eyebrow">FINAL REVIEW / DEVICE WRITE</span>
+    <h2 id="confirm-title">Install JAZZY?</h2>
+    <p id="confirm-detail"></p>
+    <p>The next action writes to the connected FM-1. Keep USB and power connected until verification finishes.</p>
+    <a id="confirm-download" hidden class="button" download>DOWNLOAD BACKUP ↓</a>
+    <label class="check"><input id="confirm-backup" type="checkbox"><span id="confirm-backup-label">I saved the backup.</span></label>
+    <label class="check"><input id="confirm-risk" type="checkbox"><span>I understand this write may erase data or require recovery. The selected official recovery file must be verified, and I will keep power and USB connected.</span></label>
+    <label class="check"><input id="confirm-notice" type="checkbox"><span>I read the risk and independence notice. JAZZY is independent of M-VAVE. The notice describes warranty and liability limits, and my non-excludable legal rights still apply.</span></label>
+    <label class="check" id="confirm-v15-row"><input id="confirm-v15" type="checkbox"><span>I checked my current firmware and understand that official V15 and V16 are supported starting points, and official recovery must match the original boot version. RHYTHMER and JAZZY can both update directly to JAZZY after backup; V15 is not required between these companion firmwares.</span></label>
+    <label class="check" id="confirm-audio-row"><input id="confirm-audio" type="checkbox"><span>I read the <a href="../downloads/THIRD-PARTY-AUDIO.txt" target="_blank" rel="noopener">Break audio notice</a>. JAZZY replaces Break A and B with Amen and Think. Credits and this checkbox grant no recording rights. I am responsible for any permission my use requires.</span></label>
+    <div class="actions"><button value="cancel">CANCEL</button><button id="confirm-write" value="write" disabled>WRITE TO THIS FM-1</button></div>
+  </form>
+</dialog>
+<footer>JAZZY / PUBLIC BETA · <a href="../">BACK TO THE SITE →</a> · <a href="../../rhythmer/installer/">RHYTHMER INSTALLER ↗</a></footer>
+</body>
+</html>

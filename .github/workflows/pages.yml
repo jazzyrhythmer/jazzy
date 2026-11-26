@@ -2,7 +2,7 @@ name: Deploy JAZZY website
 on:
   push:
     branches: [main]
-    paths: ['JAZZY-*-source.tar.gz', 'JAZZY-web-pad.tar.gz', 'JAZZY-web-launch-film.tar.gz', 'JAZZY-web-companion-and-installer.tar.gz.b64', 'JAZZY-preset-refresh-20261109.tar.gz.*.b64', 'JAZZY-web-play-ready.patch', 'JAZZY-fixes-20261109.2.tar.gz.*.b64', 'JAZZY-installer-checks.patch', 'JAZZY-sidechain-20261109.3.tar.gz.*.b64', 'JAZZY-community.patch', 'JAZZY-launch-daybreak.mp4', '.github/workflows/pages.yml', 'site-navigation/**']
+    paths: ['JAZZY-*-source.tar.gz', 'JAZZY-web-pad.tar.gz', 'JAZZY-web-launch-film.tar.gz', 'JAZZY-web-companion-and-installer.tar.gz.b64', 'JAZZY-preset-refresh-20261109.tar.gz.*.b64', 'JAZZY-web-play-ready.patch', 'JAZZY-fixes-20261109.2.tar.gz.*.b64', 'JAZZY-installer-checks.patch', 'JAZZY-sidechain-20261109.3.tar.gz.*.b64', 'JAZZY-community.patch', 'JAZZY-launch-daybreak.mp4', '.github/workflows/pages.yml', 'site-navigation/**', 'site-install/**']
   workflow_dispatch:
 permissions:
   contents: read
@@ -214,6 +214,8 @@ jobs:
         run: cp site-sample-editor/* _site/editor/
       - name: Apply shared platform navigation
         run: python3 site-navigation/apply.py _site jazzy
+      - name: Apply simplified installation and SMK-37 Pro companion section
+        run: python3 site-install/apply.py _site
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site

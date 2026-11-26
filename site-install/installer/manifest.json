@@ -1,0 +1,19 @@
+{
+  "jazzy": {
+    "url": "../downloads/JAZZY-0.1.0-beta.1-20261112.1.fwsc?sha=bd80190ca19d",
+    "bytes": 909949,
+    "sha256": "bd80190ca19df53e3de7a853da8e5ba70d7778c4ee6f6241d42b5a575526b913",
+    "product": "FM-1_900",
+    "breaks": [
+      "d626dc8552a528fee364d44dd1699b4f04bd39ccfd3bafe2f281d20819cbf4fa",
+      "f6caa6dd204dd7ede4fa6c305ac7c0f40a1416dfb641614b611bdd6ff3411a5a"
+    ],
+    "build": "20261112.1"
+  },
+  "stock": {
+    "url": "../downloads/official-v15/FM-1_015.fwsc",
+    "bytes": 699956,
+    "sha256": "db1642b2b6fa5c2cccb11ffd13878068bb28601678d3644049f99dc40e7edb8a",
+    "product": "FM-1_015"
+  }
+}
