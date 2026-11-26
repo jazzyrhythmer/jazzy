@@ -1,11 +1,11 @@
 {
   "name": "JAZZY",
-  "version": "0.1.0-smk3",
+  "version": "0.1.0-beta.1",
   "product": "SMK-37 Pro_9748028",
   "bytes": 996596,
-  "sha256": "d177bd15378b8f8a14ff4137727e4a9efb1b59dfb4f19dc45619589f31f2f468",
-  "url": "../downloads/JAZZY-OS-SMK37-Pro-0.1.0-smk3.fwsc",
-  "archive": "../downloads/JAZZY-OS-SMK37-Pro-0.1.0-smk3.zip",
-  "guide": "../downloads/JAZZY-OS-SMK37-Pro-0.1.0-smk3-guide.md",
+  "sha256": "37cf8ff768474968c55d1cc39a0dc6eaa66139775aedbad9ad824d231682d75b",
+  "url": "../downloads/JAZZY-OS-SMK37-Pro-0.1.0-beta.1.fwsc",
+  "archive": "../downloads/JAZZY-OS-SMK37-Pro-0.1.0-beta.1.zip",
+  "guide": "../downloads/JAZZY-OS-SMK37-Pro-0.1.0-beta.1-guide.md",
   "flashBytes": 987136
 }
