@@ -3,7 +3,7 @@ mountConsent();
 import {fetchChecked} from './network.mjs?v=installer-20261126.1';
 import {INSTALLER_REVISION,validateOfficial,recoveryPolicy,stockName,deviceSummary,environment,failureDetails} from './install-safety.mjs?v=installer-20261126.1';
 // SPDX-License-Identifier: GPL-3.0-only
-import { Updater, PORT_RE, fail } from './transport.mjs?v=installer-20261126.1';
+import {UniqueUpdater} from './discovery.mjs?v=installer-20261126.3';
 import { BackupConnection, captureBackup } from './fm1backup.js?v=installer-20261126.1';
 import { isSupportedSource, requireCheck, validateTarget } from './package.mjs?v=installer-20261126.1';
 import { mountProgress } from './progress.mjs?v=installer-20261126.1';
@@ -76,13 +76,8 @@ async function preload() {
 }
 
 const same = (a, b) => a.id === b.id && a.input.id === b.input.id && a.output.id === b.output.id;
-function singlePort(midi) {
-  const count = ports => [...ports.values()].filter(p => p.state === 'connected' && PORT_RE.test(p.name || '')).length;
-  if(count(midi.inputs)>1||count(midi.outputs)>1)throw fail('ambiguous','Connect only one responding FM-1 and close duplicate MIDI connections.');
-}
-class ReviewedUpdater extends Updater {
+class ReviewedUpdater extends UniqueUpdater {
   async find(filter, options) {
-    singlePort(this.access);
     const found = await super.find(filter, { ...options, others: false });
     if (found && this.expected) {
       const checked = this.expected;
