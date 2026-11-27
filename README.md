@@ -44,6 +44,14 @@ See [build instructions](BUILDING.md) and the [source archive](JAZZY-0.1.0-beta.
 
 **Same instrument, different focus.** [Rhythmer](https://github.com/jazzyrhythmer/rhythmer) is the companion firmware for building and performing grooves, with drum kits, track and Break generators, and a project editor.
 
+### Also available for M-VAVE SMK-37 Pro
+
+**JAZZY OS for SMK-37 Pro** is a separate early beta. Explore synth engines and presets, then shape chords, melodies and basslines as you play. The hardware has 37 velocity-sensitive keys, eight knobs, 16 pads and four faders.
+
+Back up your projects and settings before installing or switching firmware. The SMK-37 Pro guide covers controls, backup and recovery.
+
+[SMK-37 Pro guide](https://jazzyrhythmer.github.io/jazzy/#smk37) · [SMK-37 Pro installer](https://jazzyrhythmer.github.io/jazzy/installer/?board=smk37)
+
 <!-- JAZZY-RHYTHMER-PORTFOLIO:START -->
 ## More from Jazzy Rhythmer
 
