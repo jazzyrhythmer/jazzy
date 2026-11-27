@@ -1,0 +1,13 @@
+{
+  "name": "JAZZY",
+  "version": "0.1.0-elite.1",
+  "product": "SMK-37 Elite_9748028",
+  "updateFamily": 9,
+  "bytes": 996600,
+  "sha256": "4591c1e467a29a18c94118ec2eaa8b8f6327c4ddf56e43f22e05c06e98ebccd7",
+  "url": "../downloads/JAZZY-OS-SMK37-Elite-0.1.0-elite.1.fwsc",
+  "flashBytes": 987136,
+  "guide": "../downloads/JAZZY-OS-SMK37-Elite-0.1.0-elite.1-guide.md",
+  "archive": "../downloads/JAZZY-OS-SMK37-Elite-0.1.0-elite.1.zip",
+  "source": "../downloads/JAZZY-OS-SMK37-Elite-0.1.0-elite.1-source.tar.gz"
+}
