@@ -4,8 +4,8 @@ from pathlib import Path
 from html.parser import HTMLParser
 import re,shutil,sys
 SITES={
-'jazzy':dict(name='JAZZY',platform='FOR FM-1',root='https://jazzyrhythmer.github.io/jazzy/',logo='jazzy-mark.svg',sections=['','\x23engines','\x23patterns','installer/','manual/','\x23support'],legacy='top'),
-'rhythmer':dict(name='RHYTHMER',platform='FOR FM-1',root='https://jazzyrhythmer.github.io/rhythmer/',logo='rhythmer-mark.svg',sections=['\x23home','\x23instrument','\x23companion','\x23install','\x23guide','\x23support'],legacy='topbar'),
+'jazzy':dict(name='JAZZY',platform='FOR FM-1 &amp; SMK37',root='https://jazzyrhythmer.github.io/jazzy/',logo='jazzy-mark.svg',sections=['','\x23engines','\x23patterns','installer/','manual/','\x23support'],legacy='top'),
+'rhythmer':dict(name='RHYTHMER',platform='FOR FM-1 &amp; SMK37',root='https://jazzyrhythmer.github.io/rhythmer/',logo='rhythmer-mark.svg',sections=['\x23home','\x23instrument','\x23companion','\x23install','\x23guide','\x23support'],legacy='topbar'),
 'mpc':dict(name='RHYTHMER OS',platform='FOR MPC SAMPLE',root='https://jazzyrhythmer.github.io/mpc-sample/',logo=None,sections=['\x23home','\x23engines','\x23workflow','\x23release','manual/','\x23studio'],legacy='')}
 LABELS=['OVERVIEW','ENGINES','FEATURES','GET STARTED','MANUAL','STUDIO'];IDS=['overview','engines','features','start','manual','studio']
 
@@ -15,7 +15,7 @@ def header(site):
  platform='<div class="jr-platform-switcher" role="navigation" aria-label="Platforms and instruments"><div class="jr-platform-group" role="group" aria-label="Firmware for FM-1 &amp; SMK37"><span class="jr-platform-label">FOR FM-1 &amp; SMK37</span><div class="jr-platform-links">'+link('jazzy',SITES['jazzy']['root'],'JAZZY for FM-1')+link('rhythmer',SITES['rhythmer']['root']+'#home','RHYTHMER for FM-1')+'</div></div><div class="jr-platform-group" role="group" aria-label="Firmware for MPC Sample"><span class="jr-platform-label">FOR MPC SAMPLE</span><div class="jr-platform-links">'+link('mpc',SITES['mpc']['root']+'#home','RHYTHMER OS for MPC Sample')+'</div></div></div>'
  platform=platform[:-6]+'<div class="jr-platform-group" role="group" aria-label="Instruments for Mac and Windows"><span class="jr-platform-label">FOR MAC &amp; WINDOWS</span><div class="jr-platform-links"><a target="_top" href="https://jazzyrhythmer.github.io/rhythmer-engines/" aria-label="Rhythmer Engines for Mac &amp; Windows">RHYTHMER</a></div></div>'+'</div>'
  nav='<nav class="jr-section-nav" aria-label="Site sections">'+''.join(f'<a data-section="{id}" href="{root+path}">{label}</a>' for label,id,path in zip(LABELS,IDS,s['sections']))+'</nav>'
- return f'<header class="jr-site-header {s["legacy"]}"><a class="jr-brand" href="{root+s["sections"][0]}">{icon}<span>{s["name"]}</span><small>{s["platform"].replace("FOR ","for ")}</small></a>'+nav+platform+'</header>'
+ return f'<header class="jr-site-header {s["legacy"]}"><a class="jr-brand" href="{root+s["sections"][0]}">{icon}<span>{s["name"]}</span><small>{(s["platform"] if site in ("jazzy", "rhythmer") else s["platform"].replace("FOR ","for "))}</small></a>'+nav+platform+'</header>'
 
 def apply(root,site,subpages=True):
  root=Path(root);assets=Path(__file__).resolve().parent
